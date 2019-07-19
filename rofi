@@ -1,3 +1,4 @@
+rofi.parse-known-hosts: true
 rofi.lines: 5
 rofi.color-enabled: true
 rofi.color-window: #273238, #273238, #1e2529
