@@ -1,1 +1,35 @@
-/home/william/.Xresources
+!! URxvt Appearance
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox-esr
+URxvt.matcher.button: 1
+
+!! black mode
+URxvt.reverseVideo: True
+
+!! Font & size
+!! URxvt.font: xft:NotoMono:size=12
+!! regular
+URxvt*.font: \
+        xft:Source Code Variable:size=10, \
+        xft:DejaVu Sans Mono:size=10, \
+        xft:Unifont:size=10, \
+        xft:Serif:style=Regular:size=10
+!! bold
+URxvt*.boldfont: \
+        xft:Source Code Variable:size=10:style=bold, \
+        xft:DejaVu Sans Mono:size=10:style=bold, \
+        xft:Unifont:size=10:style=bold, \
+        xft:Serif:style=bold:size=10
+!! italic
+URxvt*.italicfont: 
+        xft:Source Code Variable:size=10:style=italic, \
+        xft:DejaVu Sans Mono:size=10:style=italic, \
+        xft:Unifont:size=10:style=italic, \
+        xft:Serif:style=italic:size=10
+
+!! Rebind ctrl-alt-c to ctrl-Shift-C for copy/past
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
