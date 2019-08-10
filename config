@@ -34,7 +34,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+a kill
-
+bindsym Mod1+F4 kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id "rofi -modi drun,run,ssh -show  drun -show-icons -config ~/.config/i3/rofi
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -134,7 +134,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Logout' -b 'Yes''i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Logout' -b 'Yes' 'i3-msg exit'"
 bindsym $mod+Shift+h exec "i3-nagbar -t warning -m 'Shutdown ?' -b 'Yes' '/usr/sbin/shutdown -h now'"
 
 # resize window (you can also use the mouse for that)
