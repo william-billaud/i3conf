@@ -11,8 +11,11 @@ general {
         interval = 5
 }
 order += "volume master"
+#order += "memory"
 #order += "ipv6"
-#order += "disk /"
+order += "disk /"
+order += "disk /home"
+order += "disk /media/william/DATA/"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
@@ -47,9 +50,16 @@ disk "/" {
         format = "%avail"
 }
 
+disk "/home" {
+        format = "%avail"
+}
+
+disk "/media/william/DATA/" {
+        format = "%avail"
+}
 
 volume master {
-        format = "♪:  %volume"
+        format = "♪: %volume"
         format_muted = "♪:🔇 "
-        device = "pulse:0"
+        device = "default"
 }

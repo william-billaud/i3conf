@@ -187,3 +187,4 @@ bar {
 # launch network manager icon
 #
 exec --no-startup-id nm-applet
+for_window [title="Emulator"] floating enable
