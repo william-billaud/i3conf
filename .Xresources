@@ -9,18 +9,21 @@ URxvt.reverseVideo: True
 !! URxvt.font: xft:NotoMono:size=12
 !! regular
 URxvt*.font: \
+	xft:MesloLGS NF:size=10, \
         xft:Source Code Variable:size=10, \
         xft:DejaVu Sans Mono:size=10, \
         xft:Unifont:size=10, \
         xft:Serif:style=Regular:size=10
 !! bold
 URxvt*.boldfont: \
+	xft:MesloLGS NF:size=10, \
         xft:Source Code Variable:size=10:style=bold, \
         xft:DejaVu Sans Mono:size=10:style=bold, \
         xft:Unifont:size=10:style=bold, \
         xft:Serif:style=bold:size=10
 !! italic
 URxvt*.italicfont: 
+	xft:MesloLGS NF:size=10, \
         xft:Source Code Variable:size=10:style=italic, \
         xft:DejaVu Sans Mono:size=10:style=italic, \
         xft:Unifont:size=10:style=italic, \
@@ -37,3 +40,13 @@ URxvt.keysym.C-minus:     resize-font:smaller
 URxvt.keysym.C-plus:      resize-font:bigger
 URxvt.keysym.C-equal:     resize-font:reset
 URxvt.keysym.C-question:  resize-font:show
+
+!! transparency
+urxvt*transparent: true
+urxvt*shading: 10
+
+!! tab
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 1

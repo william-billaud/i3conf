@@ -81,10 +81,10 @@ bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-# bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+q focus parent
@@ -188,3 +188,5 @@ bar {
 #
 exec --no-startup-id nm-applet
 for_window [title="Emulator"] floating enable
+exec --no-startup-id exec bash $HOME/.fehbg
+exec_always --no-startup-id xautolock -time 5  -locker "/home/william/.local/bin/i3-blur"
