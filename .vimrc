@@ -19,7 +19,7 @@ set so=7
 set showmatch
 
 try
-    colorscheme desert
+    colorscheme nord
 catch
 endtry
 set background=dark

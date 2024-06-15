@@ -9,6 +9,9 @@
 general {
         colors = true
         interval = 5
+        color_good = "#81a1c1" # Light green
+        color_degraded = "#fafe7c" # Light yellow
+        color_bad = "#ff7770" # Light red
 }
 order += "volume master"
 order += "memory"
@@ -23,8 +26,8 @@ order += "load"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: (%quality @ %essid) %ip"
-        format_down = "W: down"
+        format_up = " (%quality @ %essid) %ip"
+        format_down = " down"
 }
 
 ethernet _first_ {
@@ -34,12 +37,18 @@ ethernet _first_ {
 }
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "%status %percentage"
         low_threshold = 15
+	hide_seconds = true
+	integer_battery_capacity = true
+	last_full_capacity = true
+        status_chr = "+ +"
+        status_bat = ""
+        status_full = ""
 }
 
 tztime local {
-        format = "%d-%m-%Y %H:%M"
+        format = " %a %Y-%m-%d %H:%M"
 }
 
 load {
@@ -47,11 +56,11 @@ load {
 }
 
 disk "/" {
-        format = "%avail"
+        format = "/ %avail"
 }
 
 disk "/home" {
-        format = "%avail"
+        format = "/home %avail"
 }
 
 disk "/media/william/DATA/" {
